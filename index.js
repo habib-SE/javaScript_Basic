@@ -41,10 +41,15 @@
 
 // Filter mape reduce
 const marks = [20, 2, 13, 10, 55];
-const sum = marks
-  .sort((a, b) => a - b)
-  .filter((n) => n > 13)
-  .map((n) => n + 10)
-  .reduce((a, b) => a + b, 0);
+const remain = [44,50];
+// const sum = marks
+//   .sort((a, b) => a - b)
+//   .filter((n) => n > 13)
+//   .map((n) => n + 10)
+//   .reduce((a, b) => a + b, 0);
 
-console.log(sum);
+// console.log(sum);
+// const l =marks.indexOf(55);
+// console.log(l);
+const full = marks.concat(remain);
+console.log(full);
