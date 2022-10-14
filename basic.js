@@ -96,27 +96,27 @@
 // };
 // count(10, 20, 40, 60, 33, 55, 66, 77, 88);
 
-const fname = "Habib";
-const lname = "Rahman";
-const semester = 6;
-const marks = 90;
-const gpa = 3.99;
-const country = "Pakistan";
-const city = "Peshawar";
-const valage = "Swabi";
-const houseNO = 5;
+// const fname = "Habib";
+// const lname = "Rahman";
+// const semester = 6;
+// const marks = 90;
+// const gpa = 3.99;
+// const country = "Pakistan";
+// const city = "Peshawar";
+// const valage = "Swabi";
+// const houseNO = 5;
 
-const data = {
-  fname,
-  lname,
-  semester,
-  marks, 
-  gpa,
-  address: {
-    country,
-    city,
-    valage,
-    houseNO
-  }
-}
-console.log(data);
+// const data = {
+//   fname,
+//   lname,
+//   semester,
+//   marks, 
+//   gpa,
+//   address: {
+//     country,
+//     city,
+//     valage,
+//     houseNO
+//   }
+// }
+// console.log(data);
