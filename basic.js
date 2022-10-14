@@ -54,8 +54,69 @@
 // const full = marks.concat(remain);
 // console.log(full);
 
- const string =("1, raja, swabi,3.56,5th,icp ");
- const[id, name,address,gpa,semester,institute]=
- string.split(",");
- const name1= "Faizan";
-const trim= name1.trim();
+// const string = "1, raja, swabi,3.56,5th,icp ";
+// const [id, name, address, gpa, semester, institute] = string.split("");
+// const name1 = "Faizan";
+// const trim = name1.trim();
+// console.log(trim);
+
+// {Regular Expression}
+// const str = "habib";
+// const t = str.search(/[a-z]/i);
+// console.log(t);
+
+//{...}
+// const list=[20,45,55,66,77,88]
+// const list2 =[33,22,11,46,...list]
+// console.log(list2);
+
+// obj1={
+//   name:'Raja',
+//   marks:90,
+//   gpa:3.99
+// }
+// obj2={
+//   ...obj1,
+//   Address:'swabi',
+//   Country:'pakistan'
+// }
+// console.log(obj2);
+
+// const sum=(a,b,c,d)=>{
+// c=a+b+c+d;
+// console.log(c);
+// }
+// const sum2=[33,40,60,70]
+// sum(...sum2)
+
+// const count = (a, b, ...c) => {
+//   console.log(a + b);
+//   const s = c.reduce((a, b) => a + b, 0);
+//   console.log(s);
+// };
+// count(10, 20, 40, 60, 33, 55, 66, 77, 88);
+
+const fname = "Habib";
+const lname = "Rahman";
+const semester = 6;
+const marks = 90;
+const gpa = 3.99;
+const country = "Pakistan";
+const city = "Peshawar";
+const valage = "Swabi";
+const houseNO = 5;
+
+const data = {
+  fname,
+  lname,
+  semester,
+  marks, 
+  gpa,
+  address: {
+    country,
+    city,
+    valage,
+    houseNO
+  }
+}
+console.log(data);
