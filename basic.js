@@ -110,7 +110,7 @@
 //   fname,
 //   lname,
 //   semester,
-//   marks, 
+//   marks,
 //   gpa,
 //   address: {
 //     country,
@@ -120,3 +120,37 @@
 //   }
 // }
 // console.log(data);
+
+// {Mathes number in for obj}
+// const test = 21.44444;
+// const test2 = 50;
+// const num = typeof test;
+// const num2 = test2 + "";
+// const num3 = test.toFixed(2);
+// const num4 = test2.toPrecision(4);
+// const num5 = Math.ceil(test);
+// const num6 = Math.floor(test);
+// console.log(num6);
+
+//{set function}
+// const s= new Set([1,2,3,4,5,6,7]);
+// s.add(11);
+// console.log(s);
+
+//{Forin and Forof}
+
+// const obj={
+//   name:"habib",
+//   age:"22",
+//   gpa:3.99
+// }
+// const keys=Object.keys(obj);
+// console.log(keys);
+
+//const str="pakistan"
+// for(let i=0;i<str.length;i++){
+//   console.log(str[i]);
+// }
+// for(let j of str){
+//   console.log(j);
+// }
