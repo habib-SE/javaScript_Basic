@@ -153,4 +153,6 @@
 // }
 // for(let j of str){
 //   console.log(j);
-
+// const d = new Date();
+// console.log(d.getDate(),d.getHours(),d.getMinutes(),d.getSeconds());
+// console.log(d.getHours());
