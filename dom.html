@@ -9,12 +9,25 @@
 </head>
 
 <body>
-  <button onclick="chang">Click</button>
+  <button onclick="chang()">Click</button>
   <h1 id="header1">This is a heading</h1>
+  <form id="f1" class="form-group">
+    <label for="Username">Username:</label><input id="username" type="text">
+    <label for="password">Password:</label> <input id="p1" type="password" class="form-control" name="form"
+      placeholder="Enter your password">
+  </form>
   <script>
     const chang = () => {
-      const t = document.getElementById("header1").innerHTML
-      console.log(t);
+      //changing ineer html
+      //const t = document.getElementById("header1").innerHTML
+      // const camp = t.toUpperCase();
+      //document.getElementById("header1").innerHTML=camp;
+      //console.log(camp);
+
+      //changing ineer Text
+      const username = document.forms["f1"]["username"].value;
+      const password = document.forms["f1"]["p1"].value;
+      console.log(username, password);
     }
   </script>
 </body>
