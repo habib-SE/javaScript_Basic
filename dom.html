@@ -9,13 +9,22 @@
 </head>
 
 <body>
+
   <button onclick="chang()">Click</button>
+  
   <h1 id="header1">This is a heading</h1>
   <form id="f1" class="form-group">
     <label for="Username">Username:</label><input id="username" type="text">
     <label for="password">Password:</label> <input id="p1" type="password" class="form-control" name="form"
       placeholder="Enter your password">
+    <p style="color: red" id="pera1" onclick="paraFun(this)">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      Quaerat eveniet quis quas voluptates soluta sunt enim rem veniam corrupti architecto adipisci, dolores facilis
+      officiis iure facere doloremque eum esse magni.</p>
+    <p style="color: red" id="pera2" onclick="paraFun(this)">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      Tempora laborum earum minima cupiditate, cumque alias repudiandae illum aperiam iusto odio mollitia iste explicabo
+      enim odit quibusdam ut? Voluptas, non facilis?</p>
   </form>
+  <div id="news"></div>
   <script>
     const chang = () => {
       //changing ineer html
@@ -25,9 +34,25 @@
       //console.log(camp);
 
       //changing ineer Text
-      const username = document.forms["f1"]["username"].value;
-      const password = document.forms["f1"]["p1"].value;
-      console.log(username, password);
+      //const username = document.forms["f1"]["username"].value;
+      //const password = document.forms["f1"]["p1"].value;
+      //console.log(username, password);
+
+      const p = document.createElement("p");
+      p.id="p3";
+      p.innerHTML="this a new paragraph";
+     const div= document.getElementById("news")
+      div.appendChild(p);
+
+      
+    }
+    const paraFun = (para) => {
+      if (para.id == "pera1") {
+        console.log('pera1');
+      }
+      else
+        console.log('pera2');
+
     }
   </script>
 </body>
