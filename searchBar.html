@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SearchBar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+  crossorigin="anonymous"></script>
+</head>
+<body>
+  <h2 class=" text-center text-primary fst-normal  m-3">My Friends</h2>
+  <input type="text" name="" id="myInput" placeholder="search..." onkeyup="searchFun()" class="m-3">
+  <table class="table table-hover border ms-3 me-3  " id="table">
+    <thead>
+      <tr>
+        <th style="width: 30%;">Name</th>
+        <th style="width: 30%;">Degree</th>
+        <th style="width: 40%;">Profession</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Habib</td>
+        <td>BSE</td>
+        <td>Full Stack Developer</td>
+      </tr>
+      <tr>
+        <td>Ali</td>
+        <td>MSC</td>
+        <td>Fronted Developer</td>
+      </tr>
+      <tr>
+        <td>Murtaza</td>
+        <td>BBA</td>
+        <td>Fronted Developer</td>
+      </tr>
+      <tr>
+        <td>Rashid</td>
+        <td>MCA</td>
+        <td>Full Stack Developer</td>
+      </tr>
+      <tr>
+        <td>Tufail</td>
+        <td>MSC</td>
+        <td>Fronted Developer</td>
+      </tr>
+      <tr>
+        <td>Amjad</td>
+        <td>BBA</td>
+        <td>Full Stack Developer</td>
+      </tr>
+      <tr>
+        <td>Ikram</td>
+        <td>MS</td>
+        <td>Fronted Developer</td>
+      </tr>
+      <tr>
+        <td>Shadman</td>
+        <td>PHD</td>
+        <td>Full Stack Developer</td>
+      </tr>
+    </tbody>
+  </table>
+  <script>
+    const searchFun = () =>{
+      let filter = document.getElementById('myInput').value.toUpperCase();
+      let table = document.getElementById('table'); 
+      let tr = table.getElementsByTagName('tr');
+      for(var i=0 ; i<tr.length ; i++){
+        let td = tr[i].getElementsByTagName('td')[0];
+        if(td){
+          let textvalue = td.textContent || td.innerHTML;
+          if (textvalue.toUpperCase().indexOf(filter) > -1){
+            tr[i].style.display = "";
+          }else{
+            tr[i].style.display = "None"
+          }
+        }
+      }
+    }
+  </script>
+</body>
+</html>

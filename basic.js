@@ -1,5 +1,5 @@
 // let const var
-// const number= 40;
+// const number= 40; //imlicit declaration
 // const num2=37;
 // const num4=number + num2;
 // console.log(num4);
