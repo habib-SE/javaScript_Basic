@@ -41,7 +41,7 @@
 
 // Filter mape reduce
 const marks = [20, 2, 13, 10, 55];
-const remain = [44,50];
+const remain = [44, 50];
 // const sum = marks
 //   .sort((a, b) => a - b)
 //   .filter((n) => n > 13)
@@ -51,5 +51,23 @@ const remain = [44,50];
 // console.log(sum);
 // const l =marks.indexOf(55);
 // console.log(l);
-const full = marks.concat(remain);
-console.log(full);
+//const full = marks.concat(remain);
+//console.log(full);
+
+// Swaping 
+
+// var a = 6;
+// var b = 4;
+// var c = a;
+// a = c;
+// c = b;
+// console.log("a is " + a);
+// console.log("b is " + b);
+
+// Concatination
+var myName = "Habib";
+var myMessage = "hello"
+console.log(myName+" "+myMessage);
+var tweet = "kdjfjdj kjdflkjdlk lkdjflkdfdlk kdfjlkdjflk lkjdjflkdjlfk djflkkdjklfjd";
+var tweetCount = tweet.length;
+console.log("You have writen," +tweetCount+" you have compose,"+(140 -tweetCount)+" Remaining character");
