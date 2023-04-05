@@ -65,9 +65,14 @@ const remain = [44, 50];
 // console.log("b is " + b);
 
 // Concatination
-var myName = "Habib";
-var myMessage = "hello"
-console.log(myName+" "+myMessage);
-var tweet = "kdjfjdj kjdflkjdlk lkdjflkdfdlk kdfjlkdjflk lkjdjflkdjlfk djflkkdjklfjd";
-var tweetCount = tweet.length;
-console.log("You have writen," +tweetCount+" you have compose,"+(140 -tweetCount)+" Remaining character");
+// var myName = "Habib";
+// var myMessage = "hello"
+// console.log(myName+" "+myMessage);
+// var tweet = "kdjfjdj kjdflkjdlk lkdjflkdfdlk kdfjlkdjflk lkjdjflkdjlfk djflkkdjklfjd";
+// var tweetCount = tweet.length;
+// console.log("You have writen," +tweetCount+" you have compose,"+(140 -tweetCount)+" Remaining character");
+
+// Slice
+// var tweet = "this my first mistake in i am a student but not a sufficient student i am very confuse gue";
+// var run = tweet.slice(0,40)
+// console.log(run);
