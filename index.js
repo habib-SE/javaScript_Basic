@@ -76,3 +76,20 @@ const remain = [44, 50];
 // var tweet = "this my first mistake in i am a student but not a sufficient student i am very confuse gue";
 // var run = tweet.slice(0,40)
 // console.log(run);
+function getmilk(){
+    console.log("go left")
+    console.log("go left")
+    console.log("go left")
+    console.log("go left") 
+    console.log("go left")
+    console.log("go left")
+    console.log("go left")
+    console.log("go left")
+    console.log("go left")
+    console.log("go left")
+    console.log("go left")
+    console.log("go left")
+    console.log("go left")
+    
+}
+getmilk();
