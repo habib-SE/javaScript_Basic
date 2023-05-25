@@ -76,20 +76,39 @@ const remain = [44, 50];
 // var tweet = "this my first mistake in i am a student but not a sufficient student i am very confuse gue";
 // var run = tweet.slice(0,40)
 // console.log(run);
-function getmilk(){
-    console.log("go left")
-    console.log("go left")
-    console.log("go left")
-    console.log("go left") 
-    console.log("go left")
-    console.log("go left")
-    console.log("go left")
-    console.log("go left")
-    console.log("go left")
-    console.log("go left")
-    console.log("go left")
-    console.log("go left")
-    console.log("go left")
+
+// Function creation
+// function getmilk(){
+//     console.log("go left")
+//     console.log("go left")
+//     console.log("go left")
+//     console.log("go left") 
+//     console.log("go left")
+//     console.log("go left")
+//     console.log("go left")
+//     console.log("go left")
+//     console.log("go left")
+//     console.log("go left")
+//     console.log("go left")
+//     console.log("go left")
+//     console.log("go left")
     
-}
-getmilk();
+// }
+// getmilk();
+
+// function lifeInweeks(age){
+// var Remainingyears = 90-age;
+// var weeks = Remainingyears * 365;
+// var days = Remainingyears * 52;
+// var months = Remainingyears * 12;
+// console.log("we have " +Remainingyears+ " weeks " +weeks+ " days " +days+ " months left")
+// }
+// lifeInweeks(8);
+
+// Rendome number genration
+         // (loveScore percent)
+         prompt("what is your name")
+         prompt("what is their name")
+         var loveScore = Math.random() * 100;
+         loveScore = Math.floor()+1;
+         alert(loveScore);
