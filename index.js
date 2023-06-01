@@ -107,8 +107,8 @@ const remain = [44, 50];
 
 // Rendome number genration
          // (loveScore percent)
-         prompt("what is your name")
-         prompt("what is their name")
-         var loveScore = Math.random() * 100;
-         loveScore = Math.floor()+1;
-         alert(loveScore);
+        //  prompt("what is your name")
+        //  prompt("what is their name")
+        //  var loveScore = Math.random() * 100;
+        //  loveScore = Math.floor()+1;
+        //  alert(loveScore);
