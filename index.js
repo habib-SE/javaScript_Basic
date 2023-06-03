@@ -112,3 +112,14 @@ const remain = [44, 50];
         //  var loveScore = Math.random() * 100;
         //  loveScore = Math.floor()+1;
         //  alert(loveScore);
+
+        // Array Pushing values
+        var output = [];
+        var count = 1;
+        function fizzbuzz(){
+            output.push(count);
+            count++;
+            console.log(output);
+            
+        }
+        fizzbuzz();
