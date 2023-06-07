@@ -114,12 +114,19 @@ const remain = [44, 50];
         //  alert(loveScore);
 
         // Array Pushing values
-        var output = [];
-        var count = 1;
-        function fizzbuzz(){
-            output.push(count);
-            count++;
-            console.log(output);
+        //var output = [];
+        //var count = 1;
+        //function fizzbuzz(){
+          //  output.push(count);
+            //count++;
+            c//onsole.log(output);
             
+        //}
+        //fizzbuzz();
+
+        function fibonacci(n){
+            for(let i = 0+1; i<5; i++)
+            console.log(i);
         }
-        fizzbuzz();
+      var  output = fibonacci(5);
+      console.log(output);
