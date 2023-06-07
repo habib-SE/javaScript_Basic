@@ -40,8 +40,8 @@
 // console.log(data.gpa);
 
 // Filter mape reduce
-const marks = [20, 2, 13, 10, 55];
-const remain = [44, 50];
+//const marks = [20, 2, 13, 10, 55];
+//const remain = [44, 50];
 // const sum = marks
 //   .sort((a, b) => a - b)
 //   .filter((n) => n > 13)
@@ -119,14 +119,28 @@ const remain = [44, 50];
         //function fizzbuzz(){
           //  output.push(count);
             //count++;
-            c//onsole.log(output);
+            //onsole.log(output);
             
         //}
         //fizzbuzz();
 
-        function fibonacci(n){
-            for(let i = 0+1; i<5; i++)
-            console.log(i);
+        function fibonaccigenrator(n){
+          var output = [];
+          if(n == 1){
+            output = [0];
+          }
+          else if(n == 2){
+            output = [0,1];
+          }
+          else{
+            output = [0,1];
+
+            for(var i = 2; i< n; i++){
+              output.push(output[output.length -2]) + output.push(output[output.length -1]);
+            }
+            
+          }
+            return output;
         }
-      var  output = fibonacci(5);
+       var output = fibonaccigenrator(5);
       console.log(output);
