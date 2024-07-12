@@ -8,7 +8,7 @@
 // variable can be write in snackCsat
 
 // Loops
-//const list=[33,55,656,77,88,99]
+// const list=[33,55,656,77,88,99]
 // for(let i=0; i<list.length; i++) {
 //   console.log(list[i]);}
 // let j=0;
@@ -156,3 +156,144 @@
 // const d = new Date();
 // console.log(d.getDate(),d.getHours(),d.getMinutes(),d.getSeconds());
 // console.log(d.getHours());
+
+// Date 11/07/2024
+// Arrays ,Objects & Functions
+
+// Three Ways to create object litera, instance & object constructor
+
+// Literal
+// let Person = {
+//     name : "Habib",
+//     age : 25,
+//     job : 'web developer',
+//     address : {
+//        city : 'swabi',
+//        zip : 2543,
+//     }
+// }
+// console.log(Person.address.city);
+// console.log(Person);
+// console.log(Person.name);
+// console.log(Person.age);
+
+// Instance
+
+// var emp = new Object();
+// emp.id=101;
+// emp.name="Habib";
+// emp.salary=500000;
+// console.log(emp.id+ " " + emp.name + " "+ emp.salary+" ");
+
+// Object constructor
+
+// function emp2(id,name,salary){
+//     this.id = id;
+//     this.name = name;
+//     this.salary = salary;
+// }
+//  e = new emp2(102,"Ikram", 500000);
+// console.log(emp.id + " " + emp.name + " " + emp.salary + " ");
+
+// There are three way to create array
+// Literal
+// let names = [42,2,3,"Habib",undefined]
+// let = i = 0 ;
+// for (let i = 0; i<names.length; i++){   //loops
+
+//     console.log(names[i]);
+// }
+
+// console.log(names)
+// names = names.sort();
+// names.push("Developer")
+// console.log(names)
+
+//Loops
+//const list=[33,55,656,77,88,99]
+// for(let i=0; i<list.length; i++) {
+//   console.log(list[i]);}
+
+// let j=0;
+// while(j < list.length){
+//   console.log(list[j])
+//   j++;
+// }
+
+// do{
+//   console.log(list[i]);
+//   i++;
+// }while(i<10);
+// map ,reducer and filter
+
+// let arr = [10,2022,44,55,66,77]
+
+//  let a = arr.map((value,index,array) => {
+//     console.log(value)
+//     return value+1;
+// });
+// console.log(a)
+
+// // Filter
+// let arr2 = [10,20,22,44,55,66,77]
+
+//  let b = arr2.filter((a)=>{
+//     return a<40;
+// })
+
+// console.log(b);
+
+// // Reducer
+
+// Syntax of reducer
+// array.reduce((accumulator, currentValue, currentIndex, array) => {
+//     return newAccumulatorValue;
+//   }, initialValue);
+let arr = [2, 8, 5, 5];
+let avg = arr.reduce((accum, curnvalu, index, array) => {
+  let total = (accum += curnvalu);
+  if (index === array.length - 1) {
+    return total / array.length;
+  }
+  return total;
+});
+console.log(avg);
+
+// let arr3 = [1,2,3,4,5,6,7,8,9]
+// let newarr3  = arr3.reduce((h1 , h2)=>{
+//     return h1+h2;
+// })
+// console.log(newarr3);
+
+// Instance
+// var emp = new Array();
+// emp[0] = "Habib";
+// emp[1] = "shady";
+// emp[2] = "Ikram";
+
+// for (let i=0 ;i<emp.length;i++){
+// console.log(emp[i]);
+// }
+
+// Functions
+
+// let common = (name) =>{
+//     console.log(name +" is a good boy");
+
+// }
+// let name1 = 'Habib';
+// let name2 = 'ikram';
+// let name3 = 'shadman';
+// let name4 = 'zahoor';
+// common(name1);
+// common(name2);
+// common(name3);
+// common(name4);
+
+// the function which have no arguments
+
+// function hello() {
+//     console.log("hello good morning")
+//     return
+// }
+// hello();
