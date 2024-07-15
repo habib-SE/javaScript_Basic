@@ -6,6 +6,7 @@
 // variable write in camelCast
 // varialble must be meaningfull
 // variable can be write in snackCsat
+;
 
 // Loops
 // const list=[33,55,656,77,88,99]
@@ -249,15 +250,15 @@
 // array.reduce((accumulator, currentValue, currentIndex, array) => {
 //     return newAccumulatorValue;
 //   }, initialValue);
-let arr = [2, 8, 5, 5];
-let avg = arr.reduce((accum, curnvalu, index, array) => {
-  let total = (accum += curnvalu);
-  if (index === array.length - 1) {
-    return total / array.length;
-  }
-  return total;
-});
-console.log(avg);
+// let arr = [2, 8, 5, 5];
+// let avg = arr.reduce((accum, curnvalu, index, array) => {
+//   let total = (accum += curnvalu);
+//   if (index === array.length - 1) {
+//     return total / array.length;
+//   }
+//   return total;
+// });
+// console.log(avg);
 
 // let arr3 = [1,2,3,4,5,6,7,8,9]
 // let newarr3  = arr3.reduce((h1 , h2)=>{
@@ -274,8 +275,42 @@ console.log(avg);
 // for (let i=0 ;i<emp.length;i++){
 // console.log(emp[i]);
 // }
+// Array methods
+//length
+//let arr2 = [11,22,33,44,55,66]
+//console.log(arr2.length)
+
+//toString
+// let arrstring = arr2.toString();
+// console.log(arrstring);
+
+//joining
+//console.log(arr2.join("|"))
+
+//Delet
+// console.log(delete arr2[1]);
+// console.log(arr2)
+
+//connect
+// let arr1 = [11, 12, 13];
+// let arr2 = [14, 15, 16];
+// let arr3 = [17, 18, 19];
+//let newArray = arr1.concat(arr2).concat(arr3)
+//console.log(newArray)
+
+// Flate Array
+// let arr = [11,12,13,[14,15,16],[17,18],19]
+// const  flatearray = arr.flat(Infinity);
+// console.log(flatearray);
+
 
 // Functions
+//Arrow function
+// const withoutparam = () => {
+//   console.log( "Hi Mister" );
+// }
+
+// withoutparam();
 
 // let common = (name) =>{
 //     console.log(name +" is a good boy");
@@ -291,9 +326,44 @@ console.log(avg);
 // common(name4);
 
 // the function which have no arguments
-
+//Regular function
 // function hello() {
 //     console.log("hello good morning")
 //     return
 // }
 // hello();
+
+
+//javaScript this keyword
+//using this in a method
+// const person = {
+//   name: 'Zahoor',
+//   age: 24,
+//   greet() {
+//       console.log('Hello, my name is ' +
+//           this.name + ' and I am '
+//           + this.age +
+//           ' years old.');
+//   }
+// };
+
+// person.greet(); 
+
+//Using this in a function
+
+function greet2(){
+  console.log("Hello, my name is "+ this.name);
+
+}
+const person ={
+  name: "Habib",
+  sayHello: greet2,
+}
+
+const anotherPerson ={
+  name:'ikram',
+}
+
+greet2();
+person.sayHello();
+greet2.call(anotherPerson);

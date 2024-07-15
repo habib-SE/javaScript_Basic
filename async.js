@@ -93,7 +93,6 @@ const threee = () => {
 // });
 
 // Race
-
 // Promise.race([onee(), twoo(), threee()]).then((results) => {
 //   results.forEach((result, index) => {
 //     if (result.status === 'fulfilled') {
